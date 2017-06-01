@@ -1,7 +1,7 @@
 # update-pkg-extended
 [![license](https://img.shields.io/github/license/panz3r/update-pkg-extended.svg)](LICENSE)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![NPM version](https://img.shields.io/npm/v/update-pkg-extended.svg)](https://npmjs.com/package/update-pkg-extended) [![NPM downloads](https://img.shields.io/npm/dm/update-pkg-extended.svg)](https://npmjs.com/package/update-pkg-extended)
+[![Travis](https://img.shields.io/travis/panz3r/update-pkg-extended.svg)](http://travis-ci.org/panz3r/update-pkg-extended) [![NPM version](https://img.shields.io/npm/v/update-pkg-extended.svg)](https://npmjs.com/package/update-pkg-extended) [![NPM downloads](https://img.shields.io/npm/dm/update-pkg-extended.svg)](https://npmjs.com/package/update-pkg-extended)
 
 > Update package.json with ease
 

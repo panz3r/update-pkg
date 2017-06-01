@@ -1,6 +1,6 @@
 {
   "name": "update-pkg-extended",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Update package.json with ease",
   "license": "MIT",
   "repository": "panz3r/update-pkg-extended",

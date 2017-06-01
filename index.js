@@ -49,11 +49,13 @@ module.exports = class Pkg {
 		return dotProp.has(this.data, prop)
 	}
 
-	save(indent = DEFAULT_INDENT) {
+	save(indent) {
+		indent = indent || DEFAULT_INDENT
 		return pify(fs.writeFile)(this.pkg, JSON.stringify(this.data, null, indent), 'utf8')
 	}
 
-	saveSync(indent = DEFAULT_INDENT) {
+	saveSync(indent) {
+		indent = indent || DEFAULT_INDENT
 		fs.writeFileSync(this.pkg, JSON.stringify(this.data, null, indent), 'utf8')
 		return this
 	}

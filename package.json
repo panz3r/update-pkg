@@ -1,42 +1,42 @@
 {
-  "name": "update-pkg-extended",
-  "version": "0.0.4",
-  "description": "Update package.json with ease",
-  "license": "MIT",
-  "repository": "panz3r/update-pkg-extended",
-  "author": {
-    "name": "panz3r",
-    "email": "mattia.panzeri93@gmail.com",
-    "url": "github.com/panz3r"
-  },
-  "originalAuthor": {
-    "name": "EGOIST",
-    "email": "0x142857@gmail.com",
-    "url": "github.com/egoist"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "lint": "standard",
-    "lint:fix": "standard --fix",
-    "test": "standard && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "npm",
-    "package",
-    "package.json"
-  ],
-  "devDependencies": {
-    "ava": "^0.16.0",
-    "standard": "*"
-  },
-  "dependencies": {
-    "dot-prop": "^4.0.0",
-    "mkdirp": "^0.5.1",
-    "pify": "^2.3.0"
-  }
+    "name": "update-pkg-extended",
+    "version": "0.0.5",
+    "description": "Update package.json with ease",
+    "license": "MIT",
+    "repository": "panz3r/update-pkg-extended",
+    "author": {
+        "name": "panz3r",
+        "email": "mattia.panzeri93@gmail.com",
+        "url": "github.com/panz3r"
+    },
+    "originalAuthor": {
+        "name": "EGOIST",
+        "email": "0x142857@gmail.com",
+        "url": "github.com/egoist"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "scripts": {
+        "lint": "standard",
+        "lint:fix": "standard --fix",
+        "test": "standard && ava"
+    },
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+        "npm",
+        "package",
+        "package.json"
+    ],
+    "devDependencies": {
+        "ava": "^0.16.0",
+        "standard": "*"
+    },
+    "dependencies": {
+        "dot-prop": "^4.0.0",
+        "mkdirp": "^0.5.1",
+        "pify": "^2.3.0"
+    }
 }

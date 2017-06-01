@@ -21,7 +21,6 @@ module.exports = class Version {
 
   _set () {
     dotProp.set(this.data, 'version', this.get())
-    console.log('version', this.v)
     return this
   }
 

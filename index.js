@@ -5,6 +5,8 @@ const pify = require('pify')
 const mkdirp = require('mkdirp')
 const dotProp = require('dot-prop')
 
+const DEFAULT_INDENT = 4
+
 function resolvePkg(dir) {
 	dir = dir || './'
 	return path.resolve(dir, 'package.json')
@@ -47,12 +49,12 @@ module.exports = class Pkg {
 		return dotProp.has(this.data, prop)
 	}
 
-	save() {
-		return pify(fs.writeFile)(this.pkg, JSON.stringify(this.data, null, 2), 'utf8')
+	save(indent = DEFAULT_INDENT) {
+		return pify(fs.writeFile)(this.pkg, JSON.stringify(this.data, null, indent), 'utf8')
 	}
 
-	saveSync() {
-		fs.writeFileSync(this.pkg, JSON.stringify(this.data, null, 2), 'utf8')
+	saveSync(indent = DEFAULT_INDENT) {
+		fs.writeFileSync(this.pkg, JSON.stringify(this.data, null, indent), 'utf8')
 		return this
 	}
 }

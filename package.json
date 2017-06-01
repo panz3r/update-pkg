@@ -23,7 +23,8 @@
     "scripts": {
         "lint": "standard",
         "lint:fix": "standard --fix",
-        "test": "standard && ava"
+        "test": "npm run lint && ava",
+        "prepublish": "npm run test"
     },
     "main": "index.js",
     "files": [

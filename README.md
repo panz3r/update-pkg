@@ -66,6 +66,82 @@ Set value by the given `keyPath` like `author.name` and `value` like `EGOIST`.
 
 Get value by the given keyPath.
 
+### .version()
+
+Type: `function`<br>
+Return: `Version`
+
+Manage version field in a `semver`-compatible way
+
+##### .get()
+
+Return formatted version (`0.0.3`)
+
+##### .newMajor()
+
+Increment `major` version and reset all others fields
+
+```js
+pkg.version.get() // => '0.0.3'
+
+// New major version
+pkg.version().newMajor() // => '1.0.0'
+```
+
+##### .newMinor()
+
+Increment `minor` version and reset patch field
+
+```js
+pkg.version.get() // => '0.0.3'
+
+// New minor version
+pkg.version().newMinor() // => '0.1.0'
+```
+
+##### .major([major])
+
+Increment or set `major`
+
+```js
+pkg.version.get() // => '0.0.3'
+
+// Increment major version
+pkg.version().major() // => '1.0.3'
+
+// Set major version to specified value
+pkg.version().major(3) // => '3.0.3'
+```
+
+##### .minor([minor])
+
+Increment or set `minor` version
+
+```js
+pkg.version.get() // => '0.0.3'
+
+// Increment minor version
+pkg.version().minor() // => '0.1.3'
+
+// Set minor version to specified value
+pkg.version().minor(3) // => '0.3.3'
+```
+
+##### .patch([patch])
+
+Increment or set `patch` version
+
+```js
+pkg.version.get() // => '0.0.3'
+
+// Increment minor version
+pkg.version().patch() // => '0.0.4'
+
+// Set minor version to specified value
+pkg.version().patch(9) // => '0.0.9'
+```
+
+
 ### .save([indent])
 
 Type: `function`<br>

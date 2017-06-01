@@ -18,7 +18,9 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "standard && ava"
   },
   "files": [
     "index.js"
@@ -30,10 +32,7 @@
   ],
   "devDependencies": {
     "ava": "^0.16.0",
-    "xo": "^0.12.1"
-  },
-  "xo": {
-    "semicolon": false
+    "standard": "*"
   },
   "dependencies": {
     "dot-prop": "^4.0.0",

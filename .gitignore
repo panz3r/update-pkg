@@ -1,4 +1,7 @@
 node_modules
 *.log
+
 .DS_Store
-/test/package.json
+
+coverage
+.nyc_output

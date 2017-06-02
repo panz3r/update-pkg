@@ -23,8 +23,10 @@
     "scripts": {
         "lint": "standard",
         "lint:fix": "standard --fix",
-        "test": "nyc ava",
-        "report": "nyc report --reporter=html",
+        "test": "ava",
+        "coverage": "nyc ava",
+        "report:html": "nyc report --reporter=html",
+        "coveralls": "nyc ava && nyc report --reporter=text-lcov | coveralls",
         "prepublishOnly": "npm run lint && npm run test"
     },
     "main": "./src/index.js",
@@ -38,6 +40,7 @@
     ],
     "devDependencies": {
         "ava": "^0.19.1",
+        "coveralls": "^2.13.1",
         "nyc": "^11.0.1",
         "rimraf": "^2.6.1",
         "standard": "*"

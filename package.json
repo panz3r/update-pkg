@@ -5,7 +5,7 @@
     "license": "MIT",
     "repository": "panz3r/update-pkg-extended",
     "bugs": {
-      "url": "https://github.com/panz3r/update-pkg-extended/issues"
+        "url": "https://github.com/panz3r/update-pkg-extended/issues"
     },
     "author": {
         "name": "panz3r",
@@ -36,7 +36,7 @@
         "package.json"
     ],
     "devDependencies": {
-        "ava": "^0.16.0",
+        "ava": "^0.19.1",
         "standard": "*"
     },
     "dependencies": {

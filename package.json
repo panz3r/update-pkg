@@ -1,6 +1,6 @@
 {
     "name": "update-pkg-extended",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Update package.json with ease",
     "license": "MIT",
     "repository": "panz3r/update-pkg-extended",
@@ -24,7 +24,7 @@
         "lint": "standard",
         "lint:fix": "standard --fix",
         "test": "npm run lint && ava",
-        "prepublish": "npm run test"
+        "prepublishOnly": "npm run test"
     },
     "main": "index.js",
     "files": [

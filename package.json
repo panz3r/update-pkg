@@ -24,8 +24,7 @@
         "lint": "standard",
         "lint:fix": "standard --fix",
         "test": "ava",
-        "coverage": "nyc ava",
-        "report:html": "nyc report --reporter=html",
+        "coverage:html": "nyc ava && nyc report --reporter=html",
         "coveralls": "nyc ava && nyc report --reporter=text-lcov | coveralls",
         "prepublishOnly": "npm run lint && npm run test"
     },

@@ -23,10 +23,8 @@ module.exports = class Pkg {
     try {
       this.data = require(this.pkg)
     } catch (err) {
-      if (err.code === 'ENOENT') {
-        mkdirp.sync(this.pkg)
-        this.data = {}
-      } else if (err.code === 'MODULE_NOT_FOUND' && create) {
+      if (err.code === 'MODULE_NOT_FOUND' && create) {
+        mkdirp.sync(cwd)
         this.data = {}
       } else {
         throw err

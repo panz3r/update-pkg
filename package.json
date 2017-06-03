@@ -1,6 +1,6 @@
 {
     "name": "update-pkg-extended",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "Update package.json with ease",
     "license": "MIT",
     "repository": "panz3r/update-pkg-extended",
@@ -30,7 +30,7 @@
     },
     "main": "./src/index.js",
     "files": [
-        "src/"
+        "./src/"
     ],
     "keywords": [
         "npm",

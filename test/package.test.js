@@ -117,10 +117,10 @@ test('version property', async t => {
   const pkg = new Pkg(testDir)
 
   // Actions
-  const version = pkg.version()
+  const version = pkg.version.get()
 
   // Expectations
-  t.is(version.get(), '0.0.1')
+  t.is(version, '0.0.1')
 })
 
 test('saveSync', t => {

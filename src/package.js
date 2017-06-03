@@ -30,6 +30,8 @@ module.exports = class Pkg {
         throw err
       }
     }
+
+    this.version = new Version(this.data)
   }
 
   set (prop, value) {
@@ -48,10 +50,6 @@ module.exports = class Pkg {
 
   has (prop) {
     return dotProp.has(this.data, prop)
-  }
-
-  version () {
-    return new Version(this.data)
   }
 
   save (indent) {
